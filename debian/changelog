@@ -1,0 +1,354 @@
+ice (6.0.6) bionic; urgency=low
+
+  * Fixed address/tab bar reappearance in 
+  * SSB's using Firefox 69.
+
+ -- Mark Greaves (PCNetSpec) <mark@pcnetspec.co.uk>  06 Sep 2019 16:52:00 +0000
+
+ice (6.0.5) bionic; urgency=low
+
+  * Add check for zero lentgh SSB name, and
+  * EmptyNameError to warn/prevent the user
+  * from creating an SSB with a blank name.
+  * Updated translations with EmptyNameError
+  * strings.
+
+ -- Mark Greaves (PCNetSpec) <mark@pcnetspec.co.uk>  16 Jun 2019 22:06:00 +0000
+
+ice (6.0.4) bionic; urgency=low
+
+  * Updated translations including the
+  * browser profile isolation line.
+  * Thanks to Kiyohito AOKI (sambar-fgfs).
+
+ -- Mark Greaves (PCNetSpec) <mark@pcnetspec.co.uk>  02 Jun 2019 19:20:00 +0000
+
+ice (6.0.3) bionic; urgency=low
+
+  * Fixed flashing Allow/Deny dialog for
+  * passwords and addon installation, makes
+  * the nav-bar present but transparent.
+
+ -- Mark Greaves (PCNetSpec) <mark@pcnetspec.co.uk>  16 May 2019 12:48:00 +0000
+
+ice (6.0.2) bionic; urgency=low
+
+  * Fixed Ctrl+Tab hidden tab navigation.
+
+ -- Mark Greaves (PCNetSpec) <mark@pcnetspec.co.uk>  12 May 2019 19:34:00 +0000
+
+ice (6.0.1) bionic; urgency=low
+
+  * Added ability to isolate Chromium browser based SSB profiles.
+  * Fixed "Gtk.Button.new_from_stock is deprecated" warning.
+  * Added 4 bookmarks to Firefox SSB's on creation.
+  * Fixed bug where non-UTF8 items in ~/.local/share/applications
+  * would throw a "UnicodeDecodeError" in /usr/lib/python3.7/codecs.py.
+
+ -- Mark Greaves (PCNetSpec) <mark@pcnetspec.co.uk>  10 Apr 2019 18:00:00 +0000
+
+ice (5.3.5) bionic; urgency=low
+
+  * Changed 'Sound & Video' category to 'Multimedia'.
+  * Changed 'System Tools' category to 'System'.
+
+ -- Mark Greaves (PCNetSpec) <mark@pcnetspec.co.uk>  04 Dec 2018 12:24:00 +0000
+
+ice (5.3.4) bionic; urgency=low
+
+  * Added simplified Chinese translation.
+  * Thanks boltomli.
+
+ -- Mark Greaves (PCNetSpec) <mark@pcnetspec.co.uk>  01 Jul 2018 20:55:00 +0000
+
+ice (5.3.3) bionic; urgency=low
+
+  * Edited line 311 of /usr/bin/ice
+
+ -- Mark Greaves (PCNetSpec) <mark@pcnetspec.co.uk>  20 Jun 2018 12:32:00 +0000
+
+ice (5.3.2) bionic; urgency=low
+
+  * Fix deletion of IceFirefox directories.
+
+ -- Mark Greaves (PCNetSpec) <mark@pcnetspec.co.uk>  19 Jun 2018 20:32:00 +0000
+
+ice (5.3.1) xenial; urgency=low
+
+  * Added:- #identity-box { display: none !important; }
+  * to disable the SSL identity box displaying the green lock symbol.
+  * Added:- #navigator-toolbox::after { display: none !important; }
+  * to remove the white line under the hidden menu bar.
+  * Changed the pixmaps/ice.png icon.
+
+ -- Mark Greaves (PCNetSpec) <mark@pcnetspec.co.uk>  30 Jan 2018 19:17:00 +0000
+
+ice (5.3.0) xenial; urgency=low
+
+  * Fix localedir
+  * Add pl translation (by pshem)
+  * Add pt_BR translation (by christianvl)
+  * Add pt_PT translation (by pin)
+  * Add sv translation (by pin)
+  * Standards-Version = 3.9.7
+
+ -- Mark Greaves (PCNetSpec) <mark@pcnetspec.co.uk>  22 Jan 2018 17:18:00 +0000
+
+ice (5.2.9) xenial; urgency=low
+
+  * First i18n gettext version, many thanks to Kiyohito AOKI.
+  * Included translations = en/fr/jp/nl
+
+ -- Mark Greaves (PCNetSpec) <mark@pcnetspec.co.uk>  09 Jan 2018 13:11:00 +0000
+
+ice (5.2.8) xenial; urgency=low
+
+  * Added browser.tabs.warnOnClose = false user_pref to ice-firefox.
+  * Added plugin.state.flash = 2 user_pref to ice-firefox.
+
+ -- Mark Greaves (PCNetSpec) <mark@pcnetspec.co.uk>  16 Nov 2017 12:12:00 +0000
+
+ice (5.2.7) xenial; urgency=low
+
+  * Added --no-clobber switch to search.json.mozlz4 copy.
+
+ -- Mark Greaves (PCNetSpec) <mark@pcnetspec.co.uk>  06 Apr 2017 20:25:00 +0000
+
+ice (5.2.6) xenial; urgency=low
+
+  * Updated search.json.mozlz4
+
+ -- Mark Greaves (PCNetSpec) <mark@pcnetspec.co.uk>  06 Apr 2017 19:52:00 +0000
+
+ice (5.2.5) xenial; urgency=low
+
+  * Set default search engine to DuckDuckGo
+
+ -- Mark Greaves (PCNetSpec) <mark@pcnetspec.co.uk>  06 Apr 2017 17:50:00 +0000
+
+ice (5.2.4) xenial; urgency=low
+
+  * Added support for Vivaldi SSB's
+
+ -- Mark Greaves (PCNetSpec) <mark@pcnetspec.co.uk>  11 Feb 2017 12:52:00 +0000
+
+ice (5.2.3) xenial; urgency=low
+
+  * Comment suffix changed from "(WebApp)" to "(Ice SSB)"
+
+ -- Mark Greaves (PCNetSpec) <mark@pcnetspec.co.uk>  07 Dec 2016 17:40:00 +0000
+
+ice (5.2.2) xenial; urgency=low
+
+  * Added 'Comment=NAME (WebApp)' line to created SSB's
+  * to display a working tooltip in whiskermenu 1.6.1
+
+ -- Mark Greaves (PCNetSpec) <mark@pcnetspec.co.uk>  07 Dec 2016 13:25:00 +0000
+
+ice (5.2.1) xenial; urgency=low
+
+  * Completely disable disk caches for Firefox SSB's
+  * Add Ctrl+Tab tab navigation for Firefox SSB's
+
+ -- Mark Greaves (PCNetSpec) <mark@pcnetspec.co.uk>  14 May 2016 00:40:00 +0000
+
+ice (5.2.0) xenial; urgency=low
+
+  * fix rules
+
+ -- Mark Greaves (PCNetSpec) <mark@pcnetspec.co.uk>  29 Apr 2016 23:29:00 +0000
+
+ice (5.1.9) xenial; urgency=low
+
+  * updated icon for Peppermint 7
+
+ -- Mark Greaves (PCNetSpec) <mark@pcnetspec.co.uk>  29 Apr 2016 22:40:00 +0000
+
+ice (5.1.8) xenial; urgency=low
+
+  * Set variables for string references and use them. (Brian)
+  * Fixed icon path. (Mark)
+
+ -- Mark Greaves (PCNetSpec) <mark@pcnetspec.co.uk>  08 Feb 2016 18:31:00 +0000
+
+ice (5.1.7) xenial; urgency=low
+
+  *  Moved Close/Remove buttons on the Remove tab down 17px to match...
+  *  the button placement on the Create tab.
+
+ -- Mark Greaves (PCNetSpec) <mark@pcnetspec.co.uk>  08 Feb 2016 16:30:00 +0000
+
+ice (5.1.6) xenial; urgency=low
+
+  *  Close button moved to the left of Apply/Remove buttons to standardise…
+  *  button placement with other apps
+
+ -- Mark Greaves (PCNetSpec) <mark@pcnetspec.co.uk>  08 Feb 2016 14:03:00 +0000
+
+ice (5.1.5) xenial; urgency=low
+
+  * Code cleanup
+  * Added create ~/.local/share/ice directory if not present
+  * Packaged for Peppermint 7
+
+ -- Mark Greaves (PCNetSpec) <mark@pcnetspec.co.uk>  07 Feb 2016 14:30:00 +0000
+
+ice (5.1.4) trusty; urgency=low
+
+  * Change "chrome.set_active" to "firefox.set_active" in
+  * /usr/bin/ice line 538 to allow ice to work when Firefox
+  * is the only browser installed.
+
+ -- Mark Greaves (PCNetSpec) <mark@pcnetspec.co.uk>  03 Oct 2015 21:43:00 +0000
+
+ice (5.1.3) trusty; urgency=low
+
+  * Fix profile directory depth bug for firefox SSB's
+  * modify IceFirefox= .desktop entry to fix https profile cleanup
+
+ -- Mark Greaves (PCNetSpec) <mark@pcnetspec.co.uk>  03 Sep 2015 18:35:00 +0000
+
+ice (5.1.2+peppermint3) trusty; urgency=low
+
+  * Add margin-bottom CSS rule to remove dead space
+    between the title bar and the content
+
+ -- Mark Greaves (PCNetSpec) <mark@pcnetspec.co.uk>  30 Aug 2015 02:30:00 +0000
+
+ice (5.1.2+peppermint2) trusty; urgency=low
+
+  * Add new CSS rule to change hidden nav-bar height
+
+ -- Mark Greaves (PCNetSpec) <mark@pcnetspec.co.uk>  29 Aug 2015 15:00:00 +0000
+
+ice (5.1.2+peppermint1) trusty; urgency=low
+
+  * Delete <profile-dir>/cache2 directory when SSB closes.
+  * nav-bar hidden instead of removed (for page back/forward navigation)
+
+ -- Mark Greaves (PCNetSpec) <mark@pcnetspec.co.uk>  28 Aug 2015 16:55:00 +0000
+
+ice (5.1.2) trusty; urgency=low
+
+  * Fixed https SSB cleanup bug for Firefox apps.
+
+ -- Kendall Weaver <kendall@peppermintos.com>  24 Aug 2015 18:47:00 -0400
+
+ice (5.1.1) trusty; urgency=low
+
+  * Fixed Firefox profile persistency bug.
+
+ -- Kendall Weaver <kendall@peppermintos.com>  13 Aug 2015 21:44:00 -0400
+
+ice (5.1.0) trusty: urgency=low
+
+  * Added initial Firefox support.
+
+ -- Kendall Weaver <kendall@peppermintos.com>  12 Aug 2015 00:51:00 -0400
+
+ice (5.0.1) trusty; urgency=low
+
+  * No longer fails to open for icon related purposes.
+
+ -- Kendall Weaver <kendall@peppermintos.com>  03 Jun 2014 16:04:00 -0400
+
+ice (5.0.0) trusty; urgency=low
+
+  * Complete rewrite.
+  * Added error handling and revamped file handling.
+
+ -- Kendall Weaver <kendall@peppermintos.com>  31 May 2014 14:31:00 -0400
+
+ice (4.1.0) trusty; urgency=low
+
+  * Added code from pyfav to improve favicon handling.
+  * Added python3-requests and python3-bs4 as dependencies.
+
+ -- Kendall Weaver <kendall@peppermintos.com>  28 May 2014 17:28:00 -0400
+
+ice (4.0.0) trusty; urgency=low
+
+  * Ported to Python 3 and GTK+3.
+
+ -- Kendall Weaver <kendall@peppermintos.com>  07 Apr 2014 13:52:00 -0400
+
+ice (3.1.0) raring; urgency=low
+
+  * Fixed icon parser.
+
+ -- Kendall Weaver <kendall@peppermintos.com>  29 Apr 2013 13:44:00 -0400
+
+ice (3.0.1) precise; urgency=low
+
+  * Moved directory checks earlier in the script.
+
+ -- Kendall Weaver <kendall@peppermintos.com>  11 May 2012 23:11:00 -0400
+
+ice (3.0.0) natty; urgency=low
+
+  * Rewrite to include translation support and
+    take more advantage of Python's native
+    fuctionality.
+
+ -- Kendall Weaver <kendall@peppermintos.com>  14 Sep 2011 15:53:12 -0400
+
+ice (2.0.4) natty; urgency=low
+
+  * Added "Programming" as a category.
+  * Added test for favicon size to ensure it's > 0.
+
+ -- Kendall Weaver <kendall@peppermintos.com>  12 Jul 2011 17:05:08 -0400
+
+ice (2.0.3) natty; urgency=low
+
+  * No longer errors out for unrecognized icon paths.
+  * Added python as a dependency.
+
+ -- Kendall Weaver <kendall@peppermintos.com>  12 Jul 2011 02:10:38 -0400
+
+ice (2.0.2) natty; urgency=low
+
+  * Now parses .desktop file for icon and name.
+
+ -- Kendall Weaver <kendall@peppermintos.com>  28 Jun 2011 15:44:20 -0400
+
+ice (2.0.1) natty; urgency=low
+
+  * Now checks for all proper directories.
+  * Converts dashes to underlines in .desktop file names.
+
+ -- Kendall Weaver <kendall@peppermintos.com>  24 May 2011 16:35:40 -0400
+
+ice (2.0.0) natty; urgency=low
+
+  * Rewrite to include functionality for removing SSBs.
+  * Changed to use gtk.FileChooserDialog because it's prettier.
+  * Removed from excess code left over from peppermint-prism-frontend.
+
+ -- Kendall Weaver <kendalltweaver@gmail.com>  11 May 2011 14:14:02 -0400
+
+ice (1.0.3) lucid; urgency=low
+
+  * Updated .py file for Python best practices.
+
+ -- Kendall Weaver <kendalltweaver@gmail.com>  18 Feb 2011 01:08:43 -0500
+
+ice (1.0.2) lucid; urgency=low
+
+  * Now checks for proper path to icons.
+
+ -- Kendall Weaver <kendalltweaver@gmail.com>  16 Feb 2011 14:56:38 -0500
+
+ice (1.0.1) lucid; urgency=low
+
+  * Now requests complete URL
+
+ -- Kendall Weaver <kendalltweaver@gmail.com>  01 Sep 2010 02:10:22 -0400
+
+ice (1.0.0) lucid; urgency=low
+
+  * Initial release
+  * Forked from peppermint-prism-frontend
+
+ -- Kendall Weaver <kendalltweaver@gmail.com>  18 Jun 2010 20:08:33 -0400
+
