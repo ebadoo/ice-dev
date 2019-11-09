@@ -331,6 +331,10 @@ def init_firefox_profile(path):
         sfile.write('user_pref("browser.tabs.warnOnClose", false);')
         sfile.write('user_pref("plugin.state.flash", 2);')
         sfile.write('user_pref("toolkit.legacyUserProfileCustomizations.stylesheets", true);')
+        sfile.write('user_pref("media.videocontrols.picture-in-picture.enabled", true);')
+        sfile.write('user_pref("media.videocontrols.picture-in-picture.video-toggle.always-show", true);')
+        sfile.write('user_pref("media.videocontrols.picture-in-picture.video-toggle.enabled", true);')
+        sfile.write('user_pref("media.videocontrols.picture-in-picture.video-toggle.flyout-enabled", true);')
 
     # rhein: do we really need this? 
     #os.system('rm -rf ' + chromepath + '/cache2')
